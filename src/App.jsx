@@ -7,10 +7,12 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import Achievements from './pages/Achievements'
 
 const App = () => {
   const homeRef = useRef(null)
   const aboutRef = useRef(null)
+  const achievementRef = useRef(null)
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
 
@@ -25,12 +27,14 @@ const App = () => {
         scrollToElement={scrollToElement}
         homeRef={homeRef}
         aboutRef={aboutRef}
+        achievementRef={achievementRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
       />
       <Container fluid>
-        <Home ref={homeRef} />
+        <Home ref={homeRef} aboutRef={ aboutRef } scrollToElement={scrollToElement}/>
         <About ref={aboutRef} />
+        <Achievements ref={achievementRef}/>
         <Projects ref={projectsRef} />
         <Contact ref={contactRef} />
       </Container>

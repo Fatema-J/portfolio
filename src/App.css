@@ -1,6 +1,8 @@
 body {
+  text-align: center;
 }
 
 .section{
   padding-top: 70px;
+  height: 100vh;
 }
