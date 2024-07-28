@@ -29,7 +29,7 @@ const App = () => {
         contactRef={contactRef}
       />
       <Container fluid>
-        <Home ref={homeRef} />
+        <Home ref={homeRef} aboutRef={ aboutRef } scrollToElement={scrollToElement}/>
         <About ref={aboutRef} />
         <Projects ref={projectsRef} />
         <Contact ref={contactRef} />
